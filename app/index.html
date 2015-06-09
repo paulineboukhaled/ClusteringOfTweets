@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="app.css">
+  <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<style>
+    /* Space out content a bit */
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    /* Everything but the jumbotron gets side spacing for mobile first views */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    /* Custom page header */
+    .header {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    /* Make the masthead heading the same height as the navigation */
+    .header h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+    }
+
+    /* Custom page footer */
+    .footer {
+        padding-top: 19px;
+        color: #777;
+        border-top: 1px solid #e5e5e5;
+    }
+
+    /* Customize container */
+    @media (min-width: 768px) {
+        .container {
+            max-width: 730px;
+        }
+    }
+    .container-narrow > hr {
+        margin: 30px 0;
+    }
+
+    /* Main marketing message and sign up button */
+    .jumbotron {
+        text-align: center;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .jumbotron .btn {
+        padding: 14px 24px;
+        font-size: 21px;
+    }
+
+    /* Supporting marketing content */
+    .marketing {
+        margin: 40px 0;
+    }
+    .marketing p + h4 {
+        margin-top: 28px;
+    }
+
+    /* Responsive: Portrait tablets and up */
+    @media screen and (min-width: 768px) {
+        /* Remove the padding we set earlier */
+        .header,
+        .marketing,
+        .footer {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        /* Space out the masthead */
+        .header {
+            margin-bottom: 30px;
+        }
+        /* Remove the bottom border on the jumbotron for visual effect */
+        .jumbotron {
+            border-bottom: 0;
+        }
+    }
+</style>
+<body>
+
+
+
+
+  <div class="container">
+      <div class="header clearfix">
+          <h3 class="text-muted">Clustering of Tweets</h3>
+      </div>
+
+
+      <div ng-view></div>
+
+
+
+  </div> <!-- /container -->
+
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <script src="http://code.highcharts.com/modules/data.js"></script>
+  <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+</body>
+</html>

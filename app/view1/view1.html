@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="form-group">
+        <textarea ng-model="article" cols="80" rows="10" class="form-control"></textarea>
+    </div>
+</div>
+
+<div class="container">
+
+
+    <center>
+        <button class="btn btn-lg btn-primary" ng-click="showCluster()">Show Cluster</button>
+    </center>
+</div>
+
+<div ng-show="displayCluster" style="margin-bottom: 20px;">
+    <hr/>
+    <div id="container" style="height: 400px; margin: 0 auto"></div>
+</div>
+
+<hr/>
+
+
+<div class="container">
+
+    <div ng-repeat="tweet in tweets | orderBy:'-similarity'">
+
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p><b>{{tweet.id}}</b> <i>{{tweet.date}}</i></p>
+
+                <p>{{tweet.text}}</p>
+
+                <p><b>Similarity:</b> {{tweet.similarity}}</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
